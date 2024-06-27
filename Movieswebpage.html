@@ -24,7 +24,7 @@
 
         .background {
             background-color: #151515;
-            height: 400vh;
+            height: 410vh;
             background-size: cover;
         }
 
@@ -37,7 +37,7 @@
         }
 
         .Card-Content {
-            padding-top: 60px;
+            /* padding-top: 60px; */
             color: #dee2dc;
         }
 
@@ -63,7 +63,7 @@
         }
 
         .Main-Heading:hover {
-            color: rgb(252, 248, 248);
+            color: rgb(199, 192, 192);
             border-width: 2px;
         }
 
@@ -101,13 +101,19 @@
             font-weight: 600;
             color: #fff;
         }
+
         #Item5 {
             font-weight: 600;
             color: #fff;
         }
 
+        #Item6 {
+            font-weight: 600;
+            color: #fff;
+        }
+
         .Signin-section {
-            background-image: linear-gradient(#151515,#3b3a3a,#151515);
+            background-image: linear-gradient(#151515, #3b3a3a, #151515);
             width: 100%;
             height: 300px;
             padding: 20px 0;
@@ -132,8 +138,14 @@
         .Game-Head {
             font-size: 30px;
         }
-        .Signup-Head{
+
+        .Signup-Head {
             color: #fff;
+        }
+        .Explore-section{
+            color: #fff;
+            font-family: "roboto";
+            padding-top: 10px;
         }
     </style>
 </head>
@@ -167,29 +179,34 @@
                     <li class="nav-item">
                         <a class="nav-link" id="Item5" href="#">Blogs</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Item6" href="#SignUp">Sign Up</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="Background-image">
+        <div class="Background-image d-flex flex-column justify-content-center">
+            <div class="Card-Content text-center">
+                <h1 class="Main-Heading">Battle Royale Games</h1>
+                <hr class="Line-top" />
+                <p class="main-pragraph">Battle royale games involve dozens to hundreds of players, who
+                    start with minimal
+                    equipment and then must
+                    eliminate all other opponents while avoiding being trapped outside a shrinking "safe
+                    area", with the
+                    winner being the last player or team alive.</p>
+            </div>
+        </div>
+        <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 pt-3 mt-2 mb-2">
-                        <div class="Card-Content text-center">
-                            <h1 class="Main-Heading">Battle Royale Games</h1>
-                            <hr class="Line-top" />
-                            <p class="main-pragraph">Battle royale games involve dozens to hundreds of players, who
-                                start with minimal
-                                equipment and then must
-                                eliminate all other opponents while avoiding being trapped outside a shrinking "safe
-                                area", with the
-                                winner being the last player or team alive.</p>
-                        </div>
+                    <div class="col-12">
+                        <h1 class="Explore-section">Explore </h1>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mt-4 mb-4">
                         <div class="Card  shadow">
                             <div>
-                                <img src="https://wallpaper.dog/large/20498130.jpg"
-                                    class="w-100 Image-style" />
+                                <img src="https://wallpaper.dog/large/20498130.jpg" class="w-100 Image-style" />
                             </div>
                             <div class="p-2">
                                 <h1 class="Game-Head">Battlegrounds Mobile India</h1>
@@ -338,7 +355,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 Signin-section d-flex flex-column justify-content-center">
+            <div class="col-12 Signin-section d-flex flex-column justify-content-center" id="SignUp">
                 <h1 class="Signup-Head">Sign Up for free</h1>
                 <hr class="Line" />
                 <p class="Passage">Sign Up is Fast, Free and Easy</p>
